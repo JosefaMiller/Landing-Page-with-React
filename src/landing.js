@@ -13,7 +13,9 @@ export default function Landing() {
         <Card/>
         <Card/>
         <Card/>
+        
 
+        </div>
         </div>
     </main>
 }
