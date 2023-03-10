@@ -11,16 +11,16 @@ function Navbar (props){
       <div className="collapse navbar-collapse" style={{margin: "0 0 0 75%"}} id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
+            <a className="nav-link active text-white" aria-current="page" href="#">{props.option1}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white-50" href="#">Features</a>
+            <a className="nav-link text-white-50" href="#">{props.option2}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white-50" href="#">Pricing</a>
+            <a className="nav-link text-white-50" href="#">{props.option3}</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled text-white-50">Disabled</a>
+            <a className="nav-link disabled text-white-50">{props.option4}</a>
           </li>
         </ul>
       </div>
@@ -28,6 +28,10 @@ function Navbar (props){
   </nav>
 }
 Navbar.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  option1: PropTypes.string,
+  option2: PropTypes.string,
+  option3: PropTypes.string,
+  option4: PropTypes.string
 };
 export default Navbar;
